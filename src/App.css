@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+.nav{
+    padding: 0.8vmax 1vmax;
+    background-color: #032541;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav input{
+    height:2vmax ;
+    width: 40%;
+    padding: 0 1vmax;
+    outline: none;
+    border: none;
+    border-radius: 1vmax;
+    text-overflow: ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head{
+    display: inline-block;
+    padding: 1vmax;
+    /* background-color: burlywood; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    /* background-color:cadetblue ; */
+    padding: 0.4vmax;
+    font-size: 1.3vmax;
+    border-left: 0.4vmax solid #F5C518;
+    margin-bottom: 0.7vmax;
 }
 
-.App-link {
-  color: #61dafb;
+.cardContainer{
+    min-height: 38vmax;
+    /* background-color: red; */
+    display: flex;
+    /* overflow-y: hidden; */
+    /* overflow-x:auto; */
+    flex-wrap: wrap;
+    /* white-space: nowrap; */
+}
+.card{
+    height: 28vmax;
+    width: 18vmax;
+    overflow: hidden;
+    /* background-color: yellow; */
+    margin: 1vmax 1vmax;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+    /* box-shadow: 1px 1px 30px  rgba(110, 110, 110, 0.404); */
+}
+.card .img{
+    border-radius: 0.5vmax;
+    height: 75%;
+    background-color: tomato;
+    overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img img{
+   /* height: 100%; */
+   width: 100%;
+   
+}
+
+.card p{
+    font-size: 0.6vmax;
+    margin-top: 0.2vmax;
+}
+
+.details{
+    padding: 0.5vmax;
+}
+
+.details p{
+    font-size: 1vmax;
+    width: 100%;
+    text-overflow: clip;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 30px  rgba(110, 110, 110, 0.404);
+}
+
+.detailsbg{
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.detailsCard{
+    background-color: rgb(58, 58, 58);
+    width: 60vmax;
+    height: 32vmax;
+    display: flex;
+    color: rgb(255, 255, 255);
+    border-radius: 2vmax;
+    overflow: hidden;
+}
+.lft{
+    height: 100%;
+    width: 40%;  
+    overflow: hidden;  
+}
+.lft img{
+    width: 100%;
+} 
+.rgt{
+    height: 100%;
+    width: 70%;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .back{
+    background-color: red;
+    
+} */
+
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0.15vmax;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2vmax;
+    background-color: rgba(100, 100, 100, 0.096);
 }
